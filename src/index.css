@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 /* code {
@@ -22,27 +22,51 @@ gap: 50px;
 padding-top: 30px;
 }
 h1{
-/* font-family: 'Lilly', sans-serif; */
+margin-top: 20px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
 font-size: 50px;
 }
-.gen input{
-height: 35px;
-width: 250px;
-font-size: 20px;
-padding-left: 5px;
+.input_box{
+margin-top: -3%;
 }
-button{
+
+.gen input{
+  height: 18px;
+  width: 32em;
+  font-size: 18px;
+  padding-left: 5px;
+}
+.extra{
+  height: 18px;
+  width: 25em;
+  font-size: 20px;
+  padding-left: 5px;
+  }
+/* .SvgButton{
 position: relative;
 height: 38px;
-width: 100px;
 top: -2px;
 font-size: 18px;
 border: none;
 color: whitesmoke;
 background-color: forestgreen;
-box-shadow: 2px 2px 5px rgb(74, 182, 74);
 cursor: pointer;
+} */
+
+button{
+  position: relative;
+  height: 38px;
+  /* width: 100px; */
+  top: -2px;
+  font-size: 18px;
+  border: none;
+  color: whitesmoke;
+  background-color: forestgreen;
+  /* box-shadow: 2px 2px 5px rgb(74, 182, 74); */
+  cursor: pointer;
 }
+
 button:active{
 box-shadow: none;
 }
