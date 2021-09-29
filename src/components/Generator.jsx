@@ -32,12 +32,12 @@ return (
 		<Button className="button" onClick={handleClick} variant="outlined" size="large"> Generate </Button>
 		</div>
 
-		{/* <div className="extra">
+		<div className="extra">
 		<h5>Background Color:</h5>
 		<input type="color" onChange={(event) => { setBgColor(event.target.value.substring(1)) }} />
 		<h5>Dimension:</h5>
 		<input type="range" min="100" max="500"	value={size} onChange={(event) =>	{setSize(event.target.value)}} />
-		</div> */}
+		</div>
 	</div>
 	<div className="output-box">
 		<img src={qrCode} alt="" />
