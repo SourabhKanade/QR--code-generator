@@ -5,16 +5,15 @@ import Button from '@mui/material/Button';
 
 
 function Generator() {
-const [temp, setTemp] = useState("");
 const [word, setWord] = useState("");
+const [temp, setTemp] = useState(""); 
 const [size, setSize] = useState("");
 const [bgColor, setBgColor] = useState("ffffff");
 const [qrCode, setQrCode] = useState("");
 
 // Changing the URL only when the user changes the input
 useEffect(() => {
-	setQrCode
-(`http://api.qrserver.com/v1/create-qr-code/?data=${word}&size=${size}x${size}&bgcolor=${bgColor}`);
+	setQrCode(`http://api.qrserver.com/v1/create-qr-code/?data=${word}&size=${size}x${size}&bgcolor=${bgColor}`);
 }, [word, size, bgColor]);
 
 // Updating the input word when user click on the generate button
@@ -28,8 +27,8 @@ return (
 	<h1>QR Code Generator</h1>
 	<div className="input_box">
 		<div className="gen">	
-		<TextField label="Enter text to encode" type="text" required onChange={ (event) => {setTemp(event.target.value)}} placeholder="Input" />
-		<Button className="button" onClick={handleClick} variant="outlined" size="large"> Generate </Button>
+		<TextField label="Enter text to encode" type="text" onChange={ (event) => {setTemp(event.target.value)}} placeholder="Input" required/> 
+		<Button className="button" onClick={handleClick} variant="outlined" size="large" > Generate </Button>
 		</div>
 
 		<div className="extra">
